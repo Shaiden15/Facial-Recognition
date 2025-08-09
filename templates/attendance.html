@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Attendance</title>
+    <script src="{{ url_for('static', filename='js/webcam.js') }}"></script>
+</head>
+<body>
+    <h1>Take Attendance</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button onclick="captureAndSend()">Capture</button>
+    <canvas id="canvas" style="display:none;"></canvas>
+</body>
+</html>
